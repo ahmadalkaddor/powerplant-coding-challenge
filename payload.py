@@ -80,13 +80,13 @@ class PowerPlant():
     def __init__(self, powerPlant) -> None:
         self.name = powerPlant["name"]
         self.type = powerPlant["type"]
-        self.effeciency = powerPlant["efficiency"]
+        self.efficiency = powerPlant["efficiency"]
         self.pmin = powerPlant["pmin"]
         self.pmax = powerPlant["pmax"]
     def __str__(self):
         print(self.name)
         print(self.type)
-        print(self.effeciency)
+        print(self.efficiency)
         print(self.pmin)
         print(self.pmax)
         return "done!"
