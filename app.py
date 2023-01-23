@@ -14,12 +14,13 @@ def index():
 
 @app.route('/productionplan', methods=['POST'])
 def print_payload():
-    content_json = request.json
-    print(content_json["powerplants"])
+    content_json = request.get_json()
+    # print(content_json["load"])
     # print(content_json)
-    # payload = PayLoad(content_json)
+    payload = PayLoad(content_json)
+    print(payload.fuels)
     # print(payload)
-
+    return "ok"
 
 
 if __name__ == "__main__":
