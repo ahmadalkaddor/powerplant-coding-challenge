@@ -8,7 +8,7 @@ This reposiotry contains a basic solution for the powerplant coding challenge
  - install the requirements that can be found in requirements.txt using the following commmand: pip install -r requirements.txt
  - run the following command to start the application: python .\app.py
 
-The post request should be send to the following endpoint: [http://127.0.0.1:8888/](http://127.0.0.1:8888/productionplan).
+The post request should be sent to the following endpoint: [http://127.0.0.1:8888/](http://127.0.0.1:8888/productionplan).
 The post request should contain a JSON payload provided in the body following the structured payload example in folder example_payloads.
 ![image](https://user-images.githubusercontent.com/63374110/214080640-4b1da3a0-00bd-49ac-887f-86f385047ac0.png)
 
