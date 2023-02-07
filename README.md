@@ -5,8 +5,8 @@ This reposiotry contains a basic solution for the powerplant coding challenge
  - navigate to the directory where this repository is cloned
  - make a python environment. (explanation can be found here: https://docs.python.org/3/tutorial/venv.html)
  - activate the environment
- - install the requirements that can found in requirements.txt using the following commmand: pip install -r requirements.txt
- - run the following command: python .\app.py
+ - install the requirements that can be found in requirements.txt using the following commmand: pip install -r requirements.txt
+ - run the following command to start the application: python .\app.py
 
 The post request should be send to the following endpoint: [http://127.0.0.1:8888/](http://127.0.0.1:8888/productionplan).
 The post request should contain a JSON payload provided in the body following the structured payload example in folder example_payloads.
