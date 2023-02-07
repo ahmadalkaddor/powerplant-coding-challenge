@@ -1,6 +1,8 @@
 
 def get_payload():
-    payload = {
+  """function for test purposes
+  """
+  payload = {
   "load": 910,
   "fuels":
   {
@@ -54,7 +56,7 @@ def get_payload():
     }
   ]
     }
-    return payload
+  return payload
 
 
 
@@ -73,7 +75,7 @@ class Fuels():
         print(self.co2_euro_ton)
         print(self.wind_percent)
         return "done!"
-
+    
 
 ## build a powerplant object based on a dictionary, expects the a powerplant of the playload object fuels see main for examples
 class PowerPlant():
@@ -90,6 +92,8 @@ class PowerPlant():
         print(self.pmin)
         print(self.pmax)
         return "done!"
+    
+    
 ## build a Payload object based on a content of the of the post request
 class PayLoad():
     def __init__(self, payload) -> None:
@@ -107,13 +111,12 @@ class PayLoad():
         for p in self.powerplants:
             print(p)
         
-        
-    
-        
-# def main():
-    
-#     payload = get_payload()
-#     load = PayLoad(payload=payload)
-#     load.print_payload()
-    
-# main()
+    def get_price(self, type):
+      if type == "gasfired":
+        return self.fuels.gas_price_euro_megawatt
+      elif type == "turbojet":
+        return self.fuels.kerosine_price_euro_megawatt
+      elif type == "windturbine":
+        return 0
+      else:
+        raise ValueError(f"Unsupported power plant type: {type}")
