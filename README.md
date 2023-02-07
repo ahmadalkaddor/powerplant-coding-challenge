@@ -3,9 +3,9 @@ This reposiotry contains a basic solution for the powerplant coding challenge
 
 ## Run the app:
  - navigate to the directory where this repository is cloned
- - make a python environment
- - install the requirements that can found in requirements.txt
+ - make a python environment. (explanation can be found here: https://docs.python.org/3/tutorial/venv.html)
  - activate the environment
+ - install the requirements that can found in requirements.txt using the following commmand: pip install -r requirements.txt
  - run the following command: python .\app.py
 
 The post request should be send to the following endpoint: [http://127.0.0.1:8888/](http://127.0.0.1:8888/productionplan).
@@ -20,5 +20,4 @@ Code documentation is provided inside the python files next to the code. However
  - app.py contains the code to run the dev. server
  - payload.py: contains the classes used to give a form to the input
  - payload_processor: contains a basic implementation of the algorithms that give the desired response.
- - requirements.txt contains the dependencies needed for the python environement to run the Flask app.
- - 
+ - requirements.txt contains the dependencies needed for the python environement to run the Flask app. 
